@@ -67,6 +67,17 @@ function dotciGoto(e,x){
     window.location =  x;
     return false;
 }
+$(function(){
+     DotCi = Backbone.Model.extend({
+        initialize: function(){
+            alert("Oh hey! ");
+        },
+        defaults: {
+            name: 'Default title',
+            releaseDate: 2011
+        }
+    });
+})
 
 
 

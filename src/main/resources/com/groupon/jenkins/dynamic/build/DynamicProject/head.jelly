@@ -48,5 +48,7 @@
         <link rel="stylesheet" href="${resURL}/plugin/DotCi/css/jasny-bootstrap.min.css"/>
         <script src="${resURL}/plugin/DotCi/js/jasny-bootstrap.min.js"></script>
 
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
     </head>
 </j:jelly>
