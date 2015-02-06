@@ -77,6 +77,20 @@ $(function(){
             releaseDate: 2011
         }
     });
+
+
+    var UserProjectsView = Backbone.View.extend({
+        el: '#recent-user-projects',
+        template: _.template($('#item-template').html()),
+        initialize: function(){
+            this.render();
+        },
+        render: function(){
+            this.$el.html(this.template({title: 'world!'}));
+        }
+    });
+    var appView = new UserProjectsView();
+
 })
 
 
