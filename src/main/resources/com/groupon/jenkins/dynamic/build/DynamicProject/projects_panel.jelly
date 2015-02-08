@@ -22,13 +22,14 @@
   ~ THE SOFTWARE.
   -->
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form" xmlns:i="jelly:fmt" xmlns:p="/lib/hudson/project" xmlns:dotci="/lib/customTab">
+  <j:new var="h" className="hudson.Functions" /><!-- instead of JSP functions -->
+  ${h.initPageVariables(context)}
   <div class="panel panel-info">
     <div class="panel-heading">
       <h3 class="panel-title">Recent Projects</h3>
     </div>
     <ul class="list-group" id="recent-user-projects">
-
-      <st:include page="user-project.jelly" />
+      <st:include page="templates/user-project.jelly" />
     </ul>
   </div>
 </j:jelly>

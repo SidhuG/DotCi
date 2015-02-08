@@ -67,31 +67,7 @@ function dotciGoto(e,x){
     window.location =  x;
     return false;
 }
-$(function(){
-     DotCi = Backbone.Model.extend({
-        initialize: function(){
-            alert("Oh hey! ");
-        },
-        defaults: {
-            name: 'Default title',
-            releaseDate: 2011
-        }
-    });
 
-
-    var UserProjectsView = Backbone.View.extend({
-        el: '#recent-user-projects',
-        template: _.template($('#item-template').html()),
-        initialize: function(){
-            this.render();
-        },
-        render: function(){
-            this.$el.html(this.template({title: 'world!'}));
-        }
-    });
-    var appView = new UserProjectsView();
-
-})
 
 
 
